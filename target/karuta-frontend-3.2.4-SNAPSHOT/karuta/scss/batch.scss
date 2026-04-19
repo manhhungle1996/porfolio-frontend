@@ -1,0 +1,318 @@
+/* ====================
+	- Batch Model 
+   ====================*/
+
+.batch {
+	.row {
+		margin-left:0px;
+	}
+	.model-node-default {
+		padding: 10px;
+	}
+	.model-resource-default {
+		margin-top:5px;
+		min-height: 34px;
+		padding: 10px;
+	}
+	.model-node-row {
+		padding:5px;
+	}
+	.inside-full {
+		padding:0px;
+		height:100%;
+		.form-control {
+			border-radius:0px;
+		}
+	}
+	.model-node-label {
+		.buttons { 
+			float:right;
+		}
+		.menus {
+			float:right;
+			margin-top:-10px;
+		}
+	}
+	.model-resource-label {
+		.buttons { 
+			float:none;
+		}
+		.menus {
+			float:right;
+			margin-top:-10px;
+		}
+	}
+	.node-model {
+		margin-bottom:5px;
+	}
+	.collapsible {
+		float:left;
+		margin-right:5px;
+	}
+	.dropdown-item[onclick*=sem-tag] {display:none}
+	.for-each-node .dropdown-item[onclick*=sem-tag] {display:block}
+	span.chkbox-comments.xcreate-person,
+	span.chkbox-comments.xdelete-person,
+	span.chkbox-comments.xupdate-person,
+	span.chkbox-comments.xinactivate-person,
+	span.chkbox-comments.xactivate-person,
+	span.chkbox-comments.xcreate-tree,
+	span.chkbox-comments.xcreate-project,
+	span.chkbox-comments.xshare-tree,
+	span.chkbox-comments.xunshare-tree,
+	span.chkbox-comments.xselect-tree,
+	span.chkbox-comments.xdelete-tree,
+	span.chkbox-comments.xre-instantiate-tree,
+	span.chkbox-comments.xset-owner,
+	span.chkbox-comments.xupdate-tree-root,
+	span.chkbox-comments.xcreate-portfoliogroup,
+	span.chkbox-comments.xjoin-portfoliogroup,
+	span.chkbox-comments.xleave-portfoliogroup,
+	span.chkbox-comments.xshare-portfoliogroup,
+	span.chkbox-comments.xunshare-portfoliogroup,
+	span.chkbox-comments.xcreate-usergroup,
+	span.chkbox-comments.xshare-usergroup,
+	span.chkbox-comments.xunshare-usergroup,
+	span.chkbox-comments.xjoin-usergroup,
+	span.chkbox-comments.xleave-usergroup,
+	span.chkbox-comments.xshare-groups,
+	span.chkbox-comments.xupdate-node-resource,
+	span.chkbox-comments.ximport-node,
+	span.chkbox-comments.xdelete-node,
+	span.chkbox-comments.xshow-node,
+	span.chkbox-comments.xhide-node,
+	span.chkbox-comments.xreload-node,
+	span.chkbox-comments.xreload-unit,
+	span.chkbox-comments.xsubmitall-node,
+	span.chkbox-comments.xmoveup-node,
+	span.chkbox-comments.xmove-node,
+	span.chkbox-comments.xupdate-metadata,
+	span.chkbox-comments.xupdate-metadata-wad,
+	span.chkbox-comments.xupdate-metadata-epm,
+	span.chkbox-comments.xupdate-metadata-inline,
+	span.chkbox-comments.xupdate-metadata-query,
+	span.chkbox-comments.xupdate-metadata-menu,
+	span.chkbox-comments.xupdate-rights,
+	span.chkbox-comments.xupdate-field-byid,
+	span.chkbox-comments.xdelete-node-byid,
+	span.chkbox-comments.xreset-document-byid,
+	span.chkbox-comments.xdelete-tree-byid,
+	span.chkbox-comments.xupdate-field,
+	span.chkbox-comments.xupdate-textfield,
+	span.chkbox-comments.xupdate-dashboard,
+	span.chkbox-comments.xupdate-proxy,
+	span.chkbox-comments.xupdate-calendar,
+	span.chkbox-comments.xupdate-document,
+	span.chkbox-comments.xupdate-variable,
+	span.chkbox-comments.xupdate-proxy,
+	span.chkbox-comments.xupdate-url2portfolio,
+	span.chkbox-comments.xupdate-url2unit,
+	span.chkbox-comments.xupdate-color,
+	span.chkbox-comments.xupdate-get-resource,
+	span.chkbox-comments.xupdate-item,
+	span.chkbox-comments.xrefresh-tree-url2unit,
+	span.chkbox-comments.xrefresh-tree-url2portfolio,
+	span.chkbox-comments.xfor-each-line,
+	span.chkbox-comments.xfor-each-tree,
+	span.chkbox-comments.xfor-each-person,
+	span.chkbox-comments.xfor-each-node,
+	span.chkbox-comments.xactions,
+	span.chkbox-comments.xjsfunction,
+	span.chkbox-comments.xsubmitall,
+	span.chkbox-comments.xsend-email,
+	span.chkbox-comments.xvariable,
+	span.chkbox-comments.xbatch-variable,
+	span.chkbox-comments.xbatch-value-variable,
+	span.chkbox-comments.xclear-log,
+	span.chkbox-comments.xhide-log,
+	span.chkbox-comments.xwrite-log,
+	span.chkbox-comments.xif-then-else,
+	span.chkbox-comments.xif-action,
+	span.chkbox-comments.xthen-part,
+	span.chkbox-comments.xprevious-imported-node,
+	span.chkbox-comments.xupdate-node-context,
+	span.chkbox-comments.xelse-part {
+			display: inline;
+			float: right;
+			margin-right: 20px;
+	}
+	.asmRoot > div[name=lbl-div] .chkbox-comments {
+		display: none;
+	}
+	.comments,
+	.comments .form-control,
+	.comments .btn,
+	.comments .cssinfo {
+		font-style: italic;
+		font-weight: normal;
+		color: #aaaaaa;
+	}
+	.project-template {
+		display:none;
+	}
+}
+
+
+/* ============================= */
+/*     COMPONENTS COLORS         */
+/* ============================= */
+
+.batch {
+	--batch-person-color : #63e1ff;
+	--batch-tree-color : lightGreen;
+	--batch-portfoliogroup-color : #1cb01c;
+	--batch-usergroup-color : #00a3cc;
+	--batch-node-color : #e09b5b;
+	--batch-metadata-color : yellow;
+	--batch-resource-color : orange;
+	--batch-uuid-color : #ff66ff;
+	--batch-instruction-color : #990000;
+	--batch-utilities-color : #CACACA;
+	--batch-log-color : #196F3D;
+	
+
+	//----- PERSON ---
+	.inactivate-person,
+	.create-person,
+	.activate-person,
+	.update-person,
+	.delete-person {
+		margin-top:7px;
+		border:1px solid var(--batch-person-color) ;
+	}
+
+	//----- TREE ---
+	.create-tree,
+	.share-tree,
+	.unshare-tree,
+	.select-tree,
+	.delete-tree,
+	.re-instantiate-tree,
+	.set-owner,
+	.create-project {
+		margin-top:7px;
+		border:1px solid var(--batch-tree-color);
+	}
+
+	//----- PORTFOLIOGROUP ---
+	.create-portfoliogroup,
+	.join-portfoliogroup,
+	.leave-portfoliogroup,
+	.share-portfoliogroup,
+	.unshare-portfoliogroup{
+		margin-top:7px;
+		border:1px solid var(--batch-portfoliogroup-color);
+	}
+
+	//----- USERGROUP ---	
+	.create-usergroup,
+	.share-usergroup,
+	.unshare-usergroup,
+	.join-usergroup,
+	.leave-usergroup,
+	.share-groups{
+		margin-top:7px;
+		border:1px solid var(--batch-usergroup-color);
+	}
+
+	//----- NODE ---	
+
+	.delete-node,
+	.import-node,
+	.previous-imported-node,
+	.update-node-resource,
+	.moveup-node,
+	.move-node,
+	.show-node,
+	.hide-node,
+	.reload-node,
+	.reload-unit,
+	.submitall {
+		margin-top:7px;
+		border:1px solid var(--batch-node-color);
+	}
+
+	//----- METADATA ---
+	.update-metadata,
+	.update-metadata-wad,
+	.update-metadata-epm,
+	.update-metadata-inline,
+	.update-metadata-query,
+	.update-metadata-menu,
+	.update-rights {
+		margin-top:7px;
+		border:1px solid var(--batch-metadata-color);
+	}
+
+	//----- UUID ---
+	.uuid-components {
+		margin-top:7px;
+		border:1px dashed  var(--batch-uuid-color);
+	}
+	.delete-tree-byid,
+	.update-field-byid,
+	.delete-node-byid,
+	.reset-document-byid {
+		margin-top:7px;
+		border:1px solid  var(--batch-uuid-color);
+	}
+
+	//----- RESOURCE ---
+	.update-resource,
+	.update-field,
+	.update-textfield,
+	.update-dashboard,
+	.update-proxy,
+	.update-calendar,
+	.update-color,
+	.update-document,
+	.update-variable,
+	.update-proxy,
+	.update-url2unit,
+	.update-url2portfolio,
+	.update-item,
+	.refresh-tree-url2unit,
+	.refresh-tree-url2portfolio,
+	.update-get-resource {
+		margin-top:7px;
+		border:1px solid var(--batch-resource-color);
+	}
+
+	//----- INSTRUCTION ---
+	.for-each-line,
+	.for-each-tree,
+	.for-each-person,
+	.for-each-node,
+	.actions {
+		margin-top:7px;
+		border:1px dashed var(--batch-instruction-color);
+	}
+	.if-then-else {
+		margin-top:7px;
+		border:1px solid var(--batch-instruction-color);
+	}
+	.if-action,
+	.then-part,
+	.else-part {
+		margin-bottom:7px;
+		border:1px dashed var(--batch-instruction-color);
+	}
+}
+
+	//----- UTILITIES ---
+	.jsfunction,
+	.send-email,
+	.batch-value-variable,
+	.batch-variable {
+		margin-top:7px;
+		border:1px solid var(--batch-utilities-color);
+	}
+
+	//----- LOG ---
+	.clear-log,
+	.write-log,
+	.hide-log {
+		margin-top:7px;
+		border:1px solid var(--batch-log-color);
+	}
+
